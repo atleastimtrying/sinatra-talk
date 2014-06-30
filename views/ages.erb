@@ -1,0 +1,18 @@
+<!doctype html >
+<html>
+<head>
+  <title>Introduction to sinatra - Arrays</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Arrays</h1>
+  <div class="slide">
+    <h2>Below is our array of ages</h2>
+    <ul>
+      <% @ages.each do |age| %>
+        <li><%= age %></li>
+      <% end %>
+    </ul>
+  </div>
+</body>
+</html>

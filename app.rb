@@ -37,14 +37,3 @@ end
 get "/times_ten/:int" do
   (params[:int].to_i * 10).to_s
 end
-
-
-
-
-
-
-
-
-
-
-

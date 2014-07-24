@@ -28,6 +28,23 @@ get "/speakers" do
   erb :speakers
 end
 
+get "/anders" do
+  response = HTTParty.get "http://andersfisher.com"
+  @text = response.body
+  erb :anders
+end
+
 get "/times_ten/:int" do
   (params[:int].to_i * 10).to_s
 end
+
+
+
+
+
+
+
+
+
+
+
